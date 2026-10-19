@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 22px;
+      background: #18243a;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    main { padding: 80px 20px; }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 64px);
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    button {
+      background: #7c3aed;
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    footer {
+      padding: 25px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>MyWebsite ✨</header>
+
+  <main>
+    <h1>Welcome to My World!</h1>
+    <p>This is my first website.<br>
+       I am learning to create something amazing.</p>
+
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="message"></p>
+  </main>
+
+  <footer>Made with ❤️ by Me</footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Thanks for visiting my website!";
+    }
+  </script>
+</body>
+</html>
